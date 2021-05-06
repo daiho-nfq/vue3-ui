@@ -19,8 +19,8 @@
 <script>
 import { ref } from "vue";
 import LayoutHeader from "./LayoutHeader.vue";
-import NarrowSideBar from "../components/Common/SideBar/NarrowSideBar.vue";
-import MobileMenu from "../components/Common/MobileMenu/MobileMenu.vue";
+import NarrowSideBar from "@/components/Common/SideBar/NarrowSideBar.vue";
+import MobileMenu from "@/components/Common/MobileMenu/MobileMenu.vue";
 export default {
     components: { LayoutHeader, NarrowSideBar, MobileMenu },
     name: "LayoutMain",
