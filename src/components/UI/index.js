@@ -7,7 +7,7 @@ import AppH1 from "./AppH1.vue";
 import AppH2 from "./AppH2.vue";
 import AppH3 from "./AppH3.vue";
 import AppH4 from "./AppH4.vue";
-import AppButton from "./AppButton.vue";
+import AppActionButton from "./AppActionButton.vue";
 import AppLogo from "./AppLogo.vue";
 import AppLink from "./AppLink.vue";
 import AppCard from "./AppCard.vue";
@@ -26,7 +26,7 @@ export default {
         AppH2,
         AppH3,
         AppH4,
-        AppButton,
+        AppActionButton,
         AppLogo,
         AppLink,
         AppCard,

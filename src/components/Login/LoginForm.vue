@@ -17,12 +17,9 @@
             </form-group>
         </div>
 
-        <app-button
-            class="text-sm mt-8 font-medium text-white bg-red-500 hover:bg-red-600 focus:outline-none"
-            @click="login"
-        >
+        <app-action-button class="text-lg mt-8 w-full font-bold" @click="login">
             Login
-        </app-button>
+        </app-action-button>
     </app-card>
 </template>
 
