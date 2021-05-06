@@ -16,10 +16,11 @@
 </template>
 
 <script>
-import LayoutMain from "../layouts/LayoutMain.vue";
-import LayoutTwoColumns from "../layouts/LayoutTwoColumns.vue";
+import LayoutMain from "@/layouts/LayoutMain.vue";
+import LayoutTwoColumns from "@/layouts/LayoutTwoColumns.vue";
 
 export default {
+    name: "Dashboard",
     components: { LayoutMain, LayoutTwoColumns },
 };
 </script>

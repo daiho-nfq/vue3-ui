@@ -13,6 +13,7 @@ import AppLink from "./AppLink.vue";
 import AppCard from "./AppCard.vue";
 import AppOpenButton from "./AppOpenButton.vue";
 import AppCloseButton from "./AppCloseButton.vue";
+import AppSearchBar from "./AppSearchBar.vue";
 
 export default {
     components: {
@@ -31,5 +32,6 @@ export default {
         AppCard,
         AppOpenButton,
         AppCloseButton,
+        AppSearchBar,
     },
 };
