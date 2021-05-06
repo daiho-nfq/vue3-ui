@@ -1,4 +1,4 @@
-import { ROUTE_NAME } from "../constants";
+import { ROUTE_NAME } from "@/constants";
 
 const USER_NAVIGATION = [
     { name: "Your Profile", href: "#" },

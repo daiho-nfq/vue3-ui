@@ -1,6 +1,6 @@
 <template>
     <button
-        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm"
+        class="py-2 px-4 text-white bg-red-500 hover:bg-red-600 focus:outline-none rounded-md shadow-sm"
         :disabled="disable"
     >
         <slot />
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: "AppButton",
+    name: "AppActionButton",
     props: {
         disable: {
             type: Boolean,

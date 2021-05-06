@@ -7,13 +7,16 @@ import AppH1 from "./AppH1.vue";
 import AppH2 from "./AppH2.vue";
 import AppH3 from "./AppH3.vue";
 import AppH4 from "./AppH4.vue";
-import AppButton from "./AppButton.vue";
+import AppActionButton from "./AppActionButton.vue";
 import AppLogo from "./AppLogo.vue";
 import AppLink from "./AppLink.vue";
 import AppCard from "./AppCard.vue";
 import AppOpenButton from "./AppOpenButton.vue";
 import AppCloseButton from "./AppCloseButton.vue";
 import AppSearchBar from "./AppSearchBar.vue";
+import AppTable from "./AppTable.vue";
+import AppTableHead from "./AppTableHead.vue";
+import AppGroupText from "./AppGroupText.vue";
 
 export default {
     components: {
@@ -26,12 +29,15 @@ export default {
         AppH2,
         AppH3,
         AppH4,
-        AppButton,
+        AppActionButton,
         AppLogo,
         AppLink,
         AppCard,
         AppOpenButton,
         AppCloseButton,
         AppSearchBar,
+        AppTable,
+        AppTableHead,
+        AppGroupText,
     },
 };
