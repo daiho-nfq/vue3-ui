@@ -1,7 +1,7 @@
 <template>
-    <div class="text-base leading-normal">
+    <p class="text-base leading-normal">
         <slot />
-    </div>
+    </p>
 </template>
 
 <script>
