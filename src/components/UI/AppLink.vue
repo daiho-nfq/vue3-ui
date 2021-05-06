@@ -9,7 +9,7 @@ export default {
     name: "AppLink",
     props: {
         to: {
-            type: Object,
+            type: [Object, String],
             require: true,
             default: null,
         },

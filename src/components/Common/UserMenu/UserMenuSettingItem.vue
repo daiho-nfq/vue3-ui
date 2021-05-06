@@ -18,15 +18,13 @@
 
 <script>
 import { MenuItem } from "@headlessui/vue";
-import { USER_NAVIGATION } from "../../../constants";
-import AppLink from "../../UI/AppLink.vue";
+import { USER_NAVIGATION } from "@/constants";
 
 const userNavigation = USER_NAVIGATION;
 export default {
     name: "UserMenuSettingItem",
     components: {
         MenuItem,
-        AppLink,
     },
     setup() {
         return {

@@ -10,12 +10,11 @@
 </template>
 
 <script>
-import AppLogo from "../../UI/AppLogo.vue";
 import NavSideBarItem from "./NavSideBarItem.vue";
 
 export default {
     name: "NarrowSideBar",
-    components: { AppLogo, NavSideBarItem },
+    components: { NavSideBarItem },
     setup() {
         return {};
     },

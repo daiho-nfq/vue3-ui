@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { ROUTE_NAME } from "../../constants";
+import { ROUTE_NAME } from "@/constants";
 import { useRouter } from "vue-router";
 
 export default {

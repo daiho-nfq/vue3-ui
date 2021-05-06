@@ -33,9 +33,8 @@ import {
     TransitionRoot,
 } from "@headlessui/vue";
 
-import AppOpenButton from "../components/UI/AppOpenButton.vue";
-import UserMenuSetting from "../components/Common/UserMenu/UserMenuSetting.vue";
-import AppSearchBar from "../components/UI/AppSearchBar.vue";
+import UserMenuSetting from "@/components/Common/UserMenu/UserMenuSetting.vue";
+
 export default {
     name: "LayoutHeader",
     components: {
@@ -47,9 +46,7 @@ export default {
         MenuItems,
         TransitionChild,
         TransitionRoot,
-        AppOpenButton,
         UserMenuSetting,
-        AppSearchBar,
     },
 };
 </script>
