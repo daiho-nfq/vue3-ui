@@ -14,6 +14,9 @@ import AppCard from "./AppCard.vue";
 import AppOpenButton from "./AppOpenButton.vue";
 import AppCloseButton from "./AppCloseButton.vue";
 import AppSearchBar from "./AppSearchBar.vue";
+import AppTable from "./AppTable.vue";
+import AppTableHead from "./AppTableHead.vue";
+import AppGroupText from "./AppGroupText.vue";
 
 export default {
     components: {
@@ -33,5 +36,8 @@ export default {
         AppOpenButton,
         AppCloseButton,
         AppSearchBar,
+        AppTable,
+        AppTableHead,
+        AppGroupText,
     },
 };
