@@ -24,10 +24,6 @@ export default {
             type: Object,
             require: true,
         },
-        body: {
-            type: Object,
-            require: true,
-        },
     },
 };
 </script>
