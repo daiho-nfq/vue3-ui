@@ -1,3 +1,5 @@
+import { ROUTE_NAME } from "@/constants";
+
 import {
     HomeIcon,
     LibraryIcon,
@@ -7,11 +9,19 @@ import {
 } from "@heroicons/vue/outline";
 
 const SIDE_BAR_NAVIGATION = [
-    { name: "Home", href: "#", icon: HomeIcon, current: true },
-    { name: "Order", href: "#", icon: ViewGridIcon, current: false },
-    { name: "Customer", href: "#", icon: UserGroupIcon, current: false },
-    { name: "Product", href: "#", icon: CubeIcon, current: false },
-    { name: "Inventory", href: "#", icon: LibraryIcon, current: false },
+    {
+        name: "Home",
+        href: { name: ROUTE_NAME.DASHBOARD },
+        icon: HomeIcon,
+    },
+    { name: "Order", href: "#", icon: ViewGridIcon },
+    {
+        name: "Customer",
+        href: { name: ROUTE_NAME.CUSTOMER_OVERVIEW },
+        icon: UserGroupIcon,
+    },
+    { name: "Product", href: "#", icon: CubeIcon },
+    { name: "Inventory", href: "#", icon: LibraryIcon },
 ];
 
 export default SIDE_BAR_NAVIGATION;
