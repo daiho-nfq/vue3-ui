@@ -1,12 +1,10 @@
 <template>
     <layout-main>
         <main class="flex-1 overflow-y-auto">
-            <div class="mx-auto p-2 sm:p-4 lg:w-full lg:p-6">
-                <layout-two-columns>
-                    <template #left-content> left </template>
-                    <template #right-content> right </template>
-                </layout-two-columns>
-            </div>
+            <layout-two-columns>
+                <template #left-content> left </template>
+                <template #right-content> right </template>
+            </layout-two-columns>
         </main>
     </layout-main>
 </template>

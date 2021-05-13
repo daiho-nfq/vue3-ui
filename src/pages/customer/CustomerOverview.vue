@@ -1,12 +1,10 @@
 <template>
     <layout-main>
         <main class="flex-1 overflow-y-auto">
-            <div class="mx-auto p-2 sm:p-4 lg:w-full lg:p-6">
-                <layout-one-column>
-                    <customer-list-section-heading />
-                    <customer-list />
-                </layout-one-column>
-            </div>
+            <layout-one-column>
+                <customer-list-section-heading />
+                <customer-list />
+            </layout-one-column>
         </main>
     </layout-main>
 </template>
