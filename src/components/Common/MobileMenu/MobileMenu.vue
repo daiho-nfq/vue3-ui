@@ -32,7 +32,15 @@
                     leave-to="-translate-x-full"
                 >
                     <div
-                        class="relative max-w-xxs w-full bg-white pt-5 pb-4 flex-1 flex flex-col"
+                        class="
+                            relative
+                            max-w-xxs
+                            w-full
+                            bg-white
+                            pt-5
+                            pb-4
+                            flex-1 flex flex-col
+                        "
                     >
                         <TransitionChild
                             as="template"
@@ -76,10 +84,7 @@ import {
 
 import { MenuAlt2Icon } from "@heroicons/vue/outline";
 
-import { SIDE_BAR_NAVIGATION } from "../../../constants";
-import AppLogo from "../../UI/AppLogo.vue";
-import AppLink from "../../UI/AppLink.vue";
-import AppCloseButton from "../../UI/AppCloseButton.vue";
+import { SIDE_BAR_NAVIGATION } from "@/constants";
 import MobileMenuItem from "./MobileMenuItem.vue";
 
 const sidebarNavigation = SIDE_BAR_NAVIGATION;
@@ -96,9 +101,6 @@ export default {
         TransitionChild,
         TransitionRoot,
         MenuAlt2Icon,
-        AppLogo,
-        AppLink,
-        AppCloseButton,
         MobileMenuItem,
     },
     props: {

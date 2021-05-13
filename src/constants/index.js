@@ -5,6 +5,7 @@ import {
     CUSTOMER_LIST,
     CUSTOMER_PROFILE,
     CUSTOMER_LIST_HEADING,
+    CUSTOMER_PROFILE_TABS,
 } from "./customerList";
 
 export {
@@ -13,5 +14,6 @@ export {
     USER_NAVIGATION,
     CUSTOMER_LIST,
     CUSTOMER_PROFILE,
+    CUSTOMER_PROFILE_TABS,
     CUSTOMER_LIST_HEADING,
 };
