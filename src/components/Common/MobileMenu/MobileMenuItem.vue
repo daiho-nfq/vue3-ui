@@ -21,14 +21,11 @@
 </template>
 
 <script>
-import AppLink from "../../UI/AppLink.vue";
-import AppP3 from "../../UI/AppP3.vue";
-import { SIDE_BAR_NAVIGATION } from "../../../constants";
+import { SIDE_BAR_NAVIGATION } from "@/constants";
 
 const sidebarNavigation = SIDE_BAR_NAVIGATION;
 export default {
     name: "MobileMenuItem",
-    components: { AppLink, AppP3 },
     setup() {
         return {
             sidebarNavigation,
