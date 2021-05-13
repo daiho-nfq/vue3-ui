@@ -6,10 +6,8 @@
 </template>
 
 <script>
-import FormLabel from "./FormLabel.vue";
 export default {
     name: "FormGroup",
-    components: { FormLabel },
     props: {
         label: String,
     },

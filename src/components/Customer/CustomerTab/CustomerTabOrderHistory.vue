@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: "CutomerTabOrderHistory",
+    name: "CustomerTabOrderHistory",
     setup() {
         return {};
     },
