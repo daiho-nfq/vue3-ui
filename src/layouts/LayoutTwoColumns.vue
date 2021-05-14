@@ -1,7 +1,5 @@
 <template>
-    <div
-        class="mx-auto p-2 sm:p-4 lg:w-full lg:p-6 grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8"
-    >
+    <div class="mx-auto p-2 sm:p-4 lg:w-full lg:p-6 grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
         <!-- Left column -->
         <div class="grid grid-cols-1 gap-4 md:col-span-2">
             <app-card>
