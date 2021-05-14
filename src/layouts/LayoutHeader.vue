@@ -1,8 +1,6 @@
 <template>
     <header class="w-full">
-        <div
-            class="relative z-10 flex-shrink-0 h-16 bg-white border-b border-gray-200 shadow-sm flex"
-        >
+        <div class="relative z-10 flex-shrink-0 h-16 bg-white border-b border-gray-200 shadow-sm flex">
             <app-open-button @click="$emit('openMobileMenu')" />
 
             <div class="flex-1 flex justify-between px-4 sm:px-6">
@@ -10,9 +8,7 @@
                     <app-search-bar />
                 </div>
 
-                <div
-                    class="ml-2 flex items-center space-x-4 sm:ml-6 sm:space-x-6"
-                >
+                <div class="ml-2 flex items-center space-x-4 sm:ml-6 sm:space-x-6">
                     <!-- Profile dropdown -->
                     <user-menu-setting />
                 </div>
