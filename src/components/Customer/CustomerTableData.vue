@@ -27,7 +27,16 @@
         </td>
         <td class="p-3">
             <app-p4>
+<<<<<<< HEAD
                 {{ customer.current_date }}
+=======
+                {{ customer.type }}
+            </app-p4>
+        </td>
+        <td class="p-3">
+            <app-p4>
+                {{ customer.recent_purchase }}
+>>>>>>> 556a759a98d2c3fa7a40f405ede7ffe88362bfd5
             </app-p4>
         </td>
         <td class="p-3 space-x-2">

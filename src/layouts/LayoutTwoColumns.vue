@@ -1,7 +1,11 @@
 <template>
-    <div class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
+    <div class="mx-auto p-2 sm:p-4 lg:w-full lg:p-6 grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
         <!-- Left column -->
+<<<<<<< HEAD
         <div class="grid grid-cols-1 gap-4 lg:col-span-2">
+=======
+        <div class="grid grid-cols-1 gap-4 md:col-span-2">
+>>>>>>> 556a759a98d2c3fa7a40f405ede7ffe88362bfd5
             <app-card>
                 <slot name="left-content" />
             </app-card>

@@ -1,5 +1,6 @@
 import { ROUTE_NAME } from "@/constants";
 
+<<<<<<< HEAD
 import {
     HomeIcon,
     LibraryIcon,
@@ -7,6 +8,9 @@ import {
     ViewGridIcon,
     CubeIcon,
 } from "@heroicons/vue/outline";
+=======
+import { HomeIcon, LibraryIcon, UserGroupIcon, ViewGridIcon, CubeIcon } from "@heroicons/vue/outline";
+>>>>>>> 556a759a98d2c3fa7a40f405ede7ffe88362bfd5
 
 const SIDE_BAR_NAVIGATION = [
     {

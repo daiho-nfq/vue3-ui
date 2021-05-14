@@ -2,10 +2,7 @@
     <div class="h-screen bg-gray-50 flex overflow-hidden">
         <narrow-side-bar />
 
-        <mobile-menu
-            @close-mobile-menu="closeMobileMenu"
-            :is-open-mobile-menu="isOpenMobileMenu"
-        />
+        <mobile-menu @close-mobile-menu="closeMobileMenu" :is-open-mobile-menu="isOpenMobileMenu" />
 
         <div class="flex-1 flex flex-col overflow-hidden">
             <layout-header @open-mobile-menu="openMobileMenu" />
