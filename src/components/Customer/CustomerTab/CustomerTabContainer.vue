@@ -7,13 +7,17 @@
                     :key="tab.name"
                     @click="setCurrentTab(tab)"
                     class="'whitespace-nowrap py-3 border-b-2 font-medium cursor-pointer"
-                    :class="[isCurrentTab(tab.name) ? 'border-red-500 text-red-500 font-bold' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700']"
+                    :class="[
+                        isCurrentTab(tab.name)
+                            ? 'border-red-500 text-red-500 font-bold'
+                            : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
+                    ]"
                 >
                     {{ tab.name }}
                 </app-p4>
             </div>
         </div>
-        <component class="mt-8" :is="getCurrentTab.component" />
+        <component class="mt-5" :is="getCurrentTab.component" />
     </div>
 </template>
 

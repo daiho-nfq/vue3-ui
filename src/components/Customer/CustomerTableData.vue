@@ -1,14 +1,12 @@
 <template>
     <tr v-for="customer in customerList" :key="customer.uuid">
         <td class="p-3">
-            <app-group-text>
-                <app-p4 class="font-medium text-gray-900">
-                    {{ customer.full_name }}
-                </app-p4>
-                <app-p3 class="text-gray-500">
-                    {{ customer.email }}
-                </app-p3>
-            </app-group-text>
+            <app-p4 class="font-medium text-gray-900">
+                {{ customer.full_name }}
+            </app-p4>
+            <app-p3 class="text-gray-500">
+                {{ customer.email }}
+            </app-p3>
         </td>
         <td class="p-3">
             <app-p4>
@@ -16,14 +14,12 @@
             </app-p4>
         </td>
         <td class="p-3">
-            <app-group-text>
-                <app-p4 class="font-medium text-gray-900">
-                    {{ customer.address }}
-                </app-p4>
-                <app-p3 class="text-gray-500">
-                    {{ customer.city }}
-                </app-p3>
-            </app-group-text>
+            <app-p4 class="font-medium text-gray-900">
+                {{ customer.address }}
+            </app-p4>
+            <app-p3 class="text-gray-500">
+                {{ customer.city }}
+            </app-p3>
         </td>
         <td class="p-3">
             <app-p4>
@@ -41,18 +37,19 @@
                     name: $options.linkToCustomerProfile,
                     params: { code: customer.uuid },
                 }"
-                class="inline-flex items-center px-3 py-1.5 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium"
+                class="
+                    inline-flex
+                    items-center
+                    px-4
+                    py-1.5
+                    rounded-full
+                    bg-blue-600
+                    hover:bg-blue-700
+                    text-white
+                    font-medium
+                "
             >
                 view
-            </app-link>
-            <app-link
-                :to="{
-                    name: $options.linkToCustomerProfile,
-                    params: { code: customer.uuid },
-                }"
-                class="inline-flex items-center px-3 py-1.5 rounded-full bg-green-400 hover:bg-green-500 text-white font-medium"
-            >
-                edit
             </app-link>
         </td>
     </tr>

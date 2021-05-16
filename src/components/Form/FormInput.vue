@@ -1,6 +1,19 @@
 <template>
     <input
-        class="text-gray-900 shadow-sm px-3 py-2 focus:ring-gray-500 focus:border-gray-300 block w-full sm:text-sm border-gray-300 rounded-md placeholder-gray-400"
+        class="
+            text-gray-900
+            shadow-sm
+            px-3
+            py-2
+            focus:ring-gray-500
+            focus:border-gray-300
+            block
+            w-full
+            sm:text-sm
+            border-gray-300
+            rounded-md
+            placeholder-gray-400
+        "
         :class="[isError && 'border-red-300']"
         spellcheck="true"
         tabindex="-1"

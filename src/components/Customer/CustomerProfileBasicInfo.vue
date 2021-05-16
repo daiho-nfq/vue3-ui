@@ -3,7 +3,7 @@
         <app-h1 class="font-bold text-gray-900">
             {{ customerProfile.full_name }}
         </app-h1>
-        <app-action-button v-text="'Create new customer'" />
+        <app-action-button v-text="'Create new order'" />
     </div>
 </template>
 
