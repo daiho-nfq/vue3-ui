@@ -16,7 +16,7 @@ import AppCloseButton from "./AppCloseButton.vue";
 import AppSearchBar from "./AppSearchBar.vue";
 import AppTable from "./AppTable.vue";
 import AppTableHead from "./AppTableHead.vue";
-import AppGroupText from "./AppGroupText.vue";
+import AppBadge from "./AppBadge.vue";
 
 export default {
     components: {
@@ -38,6 +38,6 @@ export default {
         AppSearchBar,
         AppTable,
         AppTableHead,
-        AppGroupText,
+        AppBadge,
     },
 };
