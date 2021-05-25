@@ -11,4 +11,8 @@ const app = createApp(App);
 
 registerGlobalComponents(app);
 
-app.use(router, store).mount("#app");
+app.use(store);
+
+app.use(router);
+
+app.mount("#app");
