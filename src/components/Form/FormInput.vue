@@ -15,6 +15,7 @@
             placeholder-gray-400
         "
         :class="[isError && 'border-red-300']"
+        v-model.trim="computedValue"
         spellcheck="true"
         tabindex="-1"
         :type="type"
@@ -27,8 +28,10 @@
 </template>
 
 <script>
+import modelComputedMixin from "@/mixins/modelComputedMixin";
 export default {
     name: "FormInput",
+    mixins: [modelComputedMixin],
     props: {
         type: {
             type: String,

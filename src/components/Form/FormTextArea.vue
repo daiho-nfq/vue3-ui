@@ -15,11 +15,15 @@
             rounded-md
             placeholder-gray-400
         "
+        v-model.trim="computedValue"
     />
 </template>
 
 <script>
+import modelComputedMixin from "@/mixins/modelComputedMixin";
+
 export default {
     name: "FormTextArea",
+    mixins: [modelComputedMixin],
 };
 </script>

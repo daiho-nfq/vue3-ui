@@ -4,7 +4,15 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+import { getter_customer_bank_accounts } from "@/store/getters";
+
 export default {
     name: "CustomerTabProfileBankAccounts",
+    computed: {
+        ...mapGetters("customer", {
+            bankAccounts: getter_customer_bank_accounts,
+        }),
+    },
 };
 </script>

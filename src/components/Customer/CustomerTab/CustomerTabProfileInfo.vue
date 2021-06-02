@@ -2,36 +2,74 @@
     <app-h1 class="col-span-6" v-text="'Personal Info'" />
     <form-group class="col-span-6 sm:col-span-2">
         <form-label :label="'Full Name'" />
-        <form-input :placeholder="'Full Name'" />
+        <form-input v-model="fullName" :placeholder="'Full Name'" />
     </form-group>
     <form-group class="col-span-6 sm:col-span-2">
         <form-label :label="'Email'" />
-        <form-input :placeholder="'Email'" :type="'email'" />
+        <form-input v-model="email" :placeholder="'Email'" :type="'email'" />
     </form-group>
     <form-group class="col-span-6 sm:col-span-2">
         <form-label :label="'Phone Number'" />
-        <form-input :placeholder="'Phone number'" />
+        <form-input v-model="phoneNumber" :placeholder="'Phone number'" />
     </form-group>
     <form-group class="col-span-6 sm:col-span-4">
         <form-label :label="'Address'" />
-        <form-input :placeholder="'Address'" />
+        <form-input v-model="address" :placeholder="'Address'" />
     </form-group>
     <form-group class="col-span-6 sm:col-span-2">
         <form-label :label="'City'" />
-        <form-input :placeholder="'City'" />
+        <form-input v-model="city" :placeholder="'City'" />
     </form-group>
     <form-group class="col-span-6 sm:col-span-3">
         <form-label :label="'Common Note'" />
-        <form-text-area :placeholder="'Common Note'" />
+        <form-text-area v-model="commonNote" :placeholder="'Common Note'" />
     </form-group>
     <form-group class="col-span-6 sm:col-span-3">
         <form-label :label="'Other Note'" />
-        <form-text-area :placeholder="'Other Note'" />
+        <form-text-area v-model="otherNote" :placeholder="'Other Note'" />
     </form-group>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+import { getter_customer } from "@/store/getters";
+import { isValueEmpty, getValueByPath } from "@/helpers/utils";
+
 export default {
     name: "CustomerTabProfileInfo",
+    data() {
+        return {
+            fullName: "",
+            email: "",
+            phoneNumber: "",
+            address: "",
+            city: "",
+            commonNote: "",
+            otherNote: "",
+        };
+    },
+    computed: {
+        ...mapGetters("customer", {
+            customer: getter_customer,
+        }),
+    },
+    created() {
+        this.$_mapCustomerProfile();
+    },
+    methods: {
+        $_mapCustomerProfile() {
+            if (isValueEmpty(this.customer)) {
+                return;
+            }
+
+            this.fullName = getValueByPath(this.customer, ["full_name"], null);
+            this.email = getValueByPath(this.customer, ["email"], null);
+            this.phoneNumber = getValueByPath(this.customer, ["phone_number"], null);
+            this.address = getValueByPath(this.customer, ["address"], null);
+            this.city = getValueByPath(this.customer, ["city"], null);
+            this.commonNote = getValueByPath(this.customer, ["note", "common"], null);
+            this.otherNote = getValueByPath(this.customer, ["note", "other"], null);
+        },
+    },
 };
 </script>
