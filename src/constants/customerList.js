@@ -2,13 +2,7 @@ import CustomerTabProfile from "@/components/Customer/CustomerTab/CustomerTabPro
 import CustomerTabOrderHistory from "@/components/Customer/CustomerTab/CustomerTabOrderHistory.vue";
 import CustomerTabTransaction from "@/components/Customer/CustomerTab/CustomerTabTransaction.vue";
 
-const CUSTOMER_LIST_HEADING = [
-    "Name",
-    "Phone Number",
-    "Address",
-    "Type",
-    "Current Date",
-];
+const CUSTOMER_LIST_HEADING = ["Name", "Phone Number", "Address", "Type", "Current Date"];
 
 const CUSTOMER_PROFILE_TABS = [
     {
@@ -77,6 +71,34 @@ const CUSTOMER_LIST = [
         city: "Jiakexi",
         type: "Direct purchase",
         recent_purchase: "10/02/2021",
+        liabilities: {
+            short_term: 12000000,
+            long_term: 50000000,
+            other: 0,
+        },
+        business: {
+            organization: "Joint-stock companies",
+            main_line: "bread",
+            email: "fmctavish0@chicagotribune.com",
+            address: "87249 American Terrace",
+            tax_identification_number: "91237234751902347",
+        },
+        bank_accounts: [
+            {
+                number: "123456789",
+                name: "FAR MCTAVISH",
+                bank: "ACB",
+            },
+            {
+                number: "987654321",
+                name: "FAR MCTAVISH",
+                bank: "TECHCOMBANK",
+            },
+        ],
+        note: {
+            common: "Remember to do common note",
+            other: "Remember to do other note",
+        },
     },
     {
         uuid: "LS9QJZ9S",
@@ -97,6 +119,34 @@ const CUSTOMER_LIST = [
         city: "Qiaozhuang",
         type: "Overlapping",
         recent_purchase: "05/08/2020",
+        liabilities: {
+            short_term: 12000000,
+            long_term: 50000000,
+            other: 0,
+        },
+        business: {
+            organization: "Joint-stock companies",
+            main_line: "bread",
+            email: "fmctavish0@chicagotribune.com",
+            address: "87249 American Terrace",
+            tax_identification_number: "91237234751902347",
+        },
+        bank_accounts: [
+            {
+                number: "123456789",
+                name: "FAR MCTAVISH",
+                bank: "ACB",
+            },
+            {
+                number: "987654321",
+                name: "FAR MCTAVISH",
+                bank: "TECHCOMBANK",
+            },
+        ],
+        note: {
+            common: "Remember to do common note",
+            other: "Remember to do other note",
+        },
     },
     {
         uuid: "FKSZW47ZDUK",
@@ -107,6 +157,34 @@ const CUSTOMER_LIST = [
         city: "Seminole",
         type: "Cash",
         recent_purchase: "05/06/2019",
+        liabilities: {
+            short_term: 12000000,
+            long_term: 50000000,
+            other: 0,
+        },
+        business: {
+            organization: "Joint-stock companies",
+            main_line: "bread",
+            email: "fmctavish0@chicagotribune.com",
+            address: "87249 American Terrace",
+            tax_identification_number: "91237234751902347",
+        },
+        bank_accounts: [
+            {
+                number: "123456789",
+                name: "FAR MCTAVISH",
+                bank: "ACB",
+            },
+            {
+                number: "987654321",
+                name: "FAR MCTAVISH",
+                bank: "TECHCOMBANK",
+            },
+        ],
+        note: {
+            common: "Remember to do common note",
+            other: "Remember to do other note",
+        },
     },
     {
         uuid: "8YZNGOM",
@@ -117,6 +195,34 @@ const CUSTOMER_LIST = [
         city: "Guangming",
         type: "Overlapping",
         recent_purchase: "27/09/2020",
+        liabilities: {
+            short_term: 12000000,
+            long_term: 50000000,
+            other: 0,
+        },
+        business: {
+            organization: "Joint-stock companies",
+            main_line: "bread",
+            email: "fmctavish0@chicagotribune.com",
+            address: "87249 American Terrace",
+            tax_identification_number: "91237234751902347",
+        },
+        bank_accounts: [
+            {
+                number: "123456789",
+                name: "FAR MCTAVISH",
+                bank: "ACB",
+            },
+            {
+                number: "987654321",
+                name: "FAR MCTAVISH",
+                bank: "TECHCOMBANK",
+            },
+        ],
+        note: {
+            common: "Remember to do common note",
+            other: "Remember to do other note",
+        },
     },
     {
         uuid: "KUPDDKN2AJD",
@@ -127,6 +233,34 @@ const CUSTOMER_LIST = [
         city: "Luocheng",
         type: "Overlapping",
         recent_purchase: "17/09/2020",
+        liabilities: {
+            short_term: 12000000,
+            long_term: 50000000,
+            other: 0,
+        },
+        business: {
+            organization: "Joint-stock companies",
+            main_line: "bread",
+            email: "fmctavish0@chicagotribune.com",
+            address: "87249 American Terrace",
+            tax_identification_number: "91237234751902347",
+        },
+        bank_accounts: [
+            {
+                number: "123456789",
+                name: "FAR MCTAVISH",
+                bank: "ACB",
+            },
+            {
+                number: "987654321",
+                name: "FAR MCTAVISH",
+                bank: "TECHCOMBANK",
+            },
+        ],
+        note: {
+            common: "Remember to do common note",
+            other: "Remember to do other note",
+        },
     },
     {
         uuid: "JYIKP8O8VF",
@@ -137,6 +271,34 @@ const CUSTOMER_LIST = [
         city: "Palaió Fáliro",
         type: "Cash",
         recent_purchase: "08/02/2020",
+        liabilities: {
+            short_term: 12000000,
+            long_term: 50000000,
+            other: 0,
+        },
+        business: {
+            organization: "Joint-stock companies",
+            main_line: "bread",
+            email: "fmctavish0@chicagotribune.com",
+            address: "87249 American Terrace",
+            tax_identification_number: "91237234751902347",
+        },
+        bank_accounts: [
+            {
+                number: "123456789",
+                name: "FAR MCTAVISH",
+                bank: "ACB",
+            },
+            {
+                number: "987654321",
+                name: "FAR MCTAVISH",
+                bank: "TECHCOMBANK",
+            },
+        ],
+        note: {
+            common: "Remember to do common note JYIKP8O8VF",
+            other: "Remember to do other note JYIKP8O8VF",
+        },
     },
     {
         uuid: "EFOF7BVR",
@@ -147,6 +309,34 @@ const CUSTOMER_LIST = [
         city: "Angkahgede",
         type: "One time payment",
         recent_purchase: "28/04/2019",
+        liabilities: {
+            short_term: 12000000,
+            long_term: 50000000,
+            other: 0,
+        },
+        business: {
+            organization: "Joint-stock companies",
+            main_line: "bread",
+            email: "fmctavish0@chicagotribune.com",
+            address: "87249 American Terrace",
+            tax_identification_number: "91237234751902347",
+        },
+        bank_accounts: [
+            {
+                number: "123456789",
+                name: "FAR MCTAVISH",
+                bank: "ACB",
+            },
+            {
+                number: "987654321",
+                name: "FAR MCTAVISH",
+                bank: "TECHCOMBANK",
+            },
+        ],
+        note: {
+            common: "Remember to do common note EFOF7BVR",
+            other: "Remember to do other note EFOF7BVR",
+        },
     },
     {
         uuid: "U05WNKM8MDK",
@@ -157,12 +347,35 @@ const CUSTOMER_LIST = [
         city: "Évlalo",
         type: "Direct purchase",
         recent_purchase: "24/10/2020",
+        liabilities: {
+            short_term: 12000000,
+            long_term: 50000000,
+            other: 0,
+        },
+        business: {
+            organization: "Joint-stock companies",
+            main_line: "bread",
+            email: "fmctavish0@chicagotribune.com",
+            address: "87249 American Terrace",
+            tax_identification_number: "91237234751902347",
+        },
+        bank_accounts: [
+            {
+                number: "123456789",
+                name: "FAR MCTAVISH",
+                bank: "ACB",
+            },
+            {
+                number: "987654321",
+                name: "FAR MCTAVISH",
+                bank: "TECHCOMBANK",
+            },
+        ],
+        note: {
+            common: "Remember to do common note U05WNKM8MDK",
+            other: "Remember to do other note U05WNKM8MDK",
+        },
     },
 ];
 
-export {
-    CUSTOMER_LIST_HEADING,
-    CUSTOMER_LIST,
-    CUSTOMER_PROFILE,
-    CUSTOMER_PROFILE_TABS,
-};
+export { CUSTOMER_LIST_HEADING, CUSTOMER_LIST, CUSTOMER_PROFILE, CUSTOMER_PROFILE_TABS };
