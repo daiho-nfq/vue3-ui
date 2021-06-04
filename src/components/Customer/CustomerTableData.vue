@@ -22,9 +22,7 @@
             </app-p3>
         </td>
         <td class="p-3">
-            <app-p4>
-                {{ customer.type }}
-            </app-p4>
+            <app-customer-type-badge :customer-type="customer.type" />
         </td>
         <td class="p-3">
             <app-p4>
@@ -56,15 +54,17 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+import { getter_customer_list } from "@/store/getters";
+
 import { ROUTE_NAME } from "@/constants";
 export default {
     name: "CustomerTableData",
     linkToCustomerProfile: ROUTE_NAME.CUSTOMER_PROFILE,
-    props: {
-        customerList: {
-            type: Object,
-            require: true,
-        },
+    computed: {
+        ...mapGetters("customerList", {
+            customerList: getter_customer_list,
+        }),
     },
 };
 </script>
