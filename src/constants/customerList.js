@@ -22,45 +22,6 @@ const CUSTOMER_PROFILE_TABS = [
     },
 ];
 
-const CUSTOMER_PROFILE = {
-    uuid: "YIKX9J812RVZ",
-    full_name: "Essy Eggleson",
-    email: "eeggleson0@xing.com",
-    phone_number: "177-180-9995",
-    address: "29 Village Green Circle",
-    city: "Jiakexi",
-    type: "direct purchase",
-    recent_purchase: "10/02/2021",
-    liabilities: {
-        short_term: 12000000,
-        long_term: 50000000,
-        other: 0,
-    },
-    business: {
-        organization: "Joint-stock companies",
-        main_line: "bread",
-        email: "fmctavish0@chicagotribune.com",
-        address: "87249 American Terrace",
-        tax_identification_number: "91237234751902347",
-    },
-    bank_accounts: [
-        {
-            number: "123456789",
-            name: "FAR MCTAVISH",
-            bank: "ACB",
-        },
-        {
-            number: "987654321",
-            name: "FAR MCTAVISH",
-            bank: "TECHCOMBANK",
-        },
-    ],
-    note: {
-        common: "Remember to do common note",
-        other: "Remember to do other note",
-    },
-};
-
 const CUSTOMER_LIST = [
     {
         uuid: "YIKX9J812RVZ",
@@ -226,4 +187,4 @@ const CUSTOMER_LIST = [
     },
 ];
 
-export { CUSTOMER_LIST_HEADING, CUSTOMER_LIST, CUSTOMER_PROFILE, CUSTOMER_PROFILE_TABS };
+export { CUSTOMER_LIST_HEADING, CUSTOMER_LIST, CUSTOMER_PROFILE_TABS };
