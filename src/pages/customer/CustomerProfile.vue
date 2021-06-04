@@ -5,6 +5,7 @@
                 <template #left-content>
                     <customer-profile-basic-info />
                     <customer-tab-container />
+                    <app-action-button class="ml-auto block" v-text="'Save'" />
                 </template>
                 <template #right-content> right </template>
             </layout-two-columns>
@@ -13,6 +14,8 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
+import { action_fetCustomerData } from "@/store/actions";
 import LayoutMain from "@/layouts/LayoutMain.vue";
 import LayoutTwoColumns from "@/layouts/LayoutTwoColumns.vue";
 import CustomerProfileBasicInfo from "@/components/Customer/CustomerProfileBasicInfo.vue";
@@ -25,6 +28,18 @@ export default {
         LayoutTwoColumns,
         CustomerProfileBasicInfo,
         CustomerTabContainer,
+    },
+    created() {
+        this.$_getCustomerProfileData();
+    },
+    methods: {
+        $_getCustomerProfileData() {
+            const customerCode = this.$route.params.code;
+            this.fetchCustomerData(customerCode);
+        },
+        ...mapActions("customer", {
+            fetchCustomerData: action_fetCustomerData,
+        }),
     },
 };
 </script>

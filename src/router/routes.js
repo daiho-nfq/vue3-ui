@@ -1,4 +1,4 @@
-import { ROUTE_NAME } from "../constants";
+import { ROUTE_NAME } from "@/constants";
 import Dashboard from "@/pages/Dashboard.vue";
 import Login from "@/pages/login/Login.vue";
 import Customer from "@/pages/customer/Customer.vue";

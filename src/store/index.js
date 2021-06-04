@@ -26,6 +26,5 @@ function getAllModuleStores() {
         modules[moduleName] = module;
     }
 
-    console.log(modules);
     return modules;
 }

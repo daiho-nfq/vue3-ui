@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-3 sm:mt-2">
+    <div>
         <div class="border-b border-gray-200 mx-auto">
             <div class="flex space-x-10 justify-between md:justify-start">
                 <app-p4

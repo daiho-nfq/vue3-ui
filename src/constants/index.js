@@ -1,12 +1,8 @@
 import { ROUTE_NAME } from "./routeConstant";
 import SIDE_BAR_NAVIGATION from "./sideBarNavigation";
 import USER_NAVIGATION from "./userNavigation";
-import {
-    CUSTOMER_LIST,
-    CUSTOMER_PROFILE,
-    CUSTOMER_LIST_HEADING,
-    CUSTOMER_PROFILE_TABS,
-} from "./customerList";
+import { CUSTOMER_LIST, CUSTOMER_PROFILE, CUSTOMER_LIST_HEADING, CUSTOMER_PROFILE_TABS } from "./customerList";
+import CUSTOMER_TYPE from "./customerType";
 
 export {
     ROUTE_NAME,
@@ -16,4 +12,5 @@ export {
     CUSTOMER_PROFILE,
     CUSTOMER_PROFILE_TABS,
     CUSTOMER_LIST_HEADING,
+    CUSTOMER_TYPE,
 };
