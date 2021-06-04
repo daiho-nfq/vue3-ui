@@ -17,6 +17,7 @@ import AppSearchBar from "./AppSearchBar.vue";
 import AppTable from "./AppTable.vue";
 import AppTableHead from "./AppTableHead.vue";
 import AppBadge from "./AppBadge.vue";
+import AppCustomerTypeBadge from "./AppCustomerTypeBadge.vue";
 
 export default {
     components: {
@@ -39,5 +40,6 @@ export default {
         AppTable,
         AppTableHead,
         AppBadge,
+        AppCustomerTypeBadge,
     },
 };

@@ -1,6 +1,9 @@
 <template>
     <div class="grid grid-cols-6 gap-4">
-        <app-h1 class="col-span-6 font-medium" v-text="'Personal Info'" />
+        <div class="col-span-6 flex items-center justify-between">
+            <app-h1 class="font-medium" v-text="'Personal Info'" />
+            <app-badge class="rounded bg-gray-100 text-gray-800" v-text="customer.recent_purchase" />
+        </div>
         <form-group class="col-span-6 sm:col-span-2">
             <form-label :label="'Full Name'" />
             <form-input v-model="fullName" :placeholder="'Full Name'" />

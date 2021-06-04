@@ -29,7 +29,7 @@ const CUSTOMER_PROFILE = {
     phone_number: "177-180-9995",
     address: "29 Village Green Circle",
     city: "Jiakexi",
-    type: "Direct purchase",
+    type: "direct purchase",
     recent_purchase: "10/02/2021",
     liabilities: {
         short_term: 12000000,
@@ -69,7 +69,8 @@ const CUSTOMER_LIST = [
         phone_number: "177-180-9995",
         address: "29 Village Green Circle",
         city: "Jiakexi",
-        type: "Direct purchase",
+        main_line: "bread",
+        type: "direct purchase",
         recent_purchase: "10/02/2021",
         liabilities: {
             short_term: 12000000,
@@ -78,7 +79,6 @@ const CUSTOMER_LIST = [
         },
         business: {
             organization: "Joint-stock companies",
-            main_line: "bread",
             email: "fmctavish0@chicagotribune.com",
             address: "87249 American Terrace",
             tax_identification_number: "91237234751902347",
@@ -107,7 +107,8 @@ const CUSTOMER_LIST = [
         phone_number: "902-303-2772",
         address: "883 Glendale Parkway",
         city: "Hepu",
-        type: "One time payment",
+        main_line: "bread",
+        type: "one-time payment",
         recent_purchase: "01/03/2021",
     },
     {
@@ -117,7 +118,7 @@ const CUSTOMER_LIST = [
         phone_number: "671-245-7546",
         address: "69253 Sugar Parkway",
         city: "Qiaozhuang",
-        type: "Overlapping",
+        type: "overlapping",
         recent_purchase: "05/08/2020",
         liabilities: {
             short_term: 12000000,
@@ -126,7 +127,6 @@ const CUSTOMER_LIST = [
         },
         business: {
             organization: "Joint-stock companies",
-            main_line: "bread",
             email: "fmctavish0@chicagotribune.com",
             address: "87249 American Terrace",
             tax_identification_number: "91237234751902347",
@@ -155,7 +155,8 @@ const CUSTOMER_LIST = [
         phone_number: "317-462-7300",
         address: "32 Lakewood Gardens Court",
         city: "Seminole",
-        type: "Cash",
+        main_line: "bread",
+        type: "cash",
         recent_purchase: "05/06/2019",
         liabilities: {
             short_term: 12000000,
@@ -164,7 +165,6 @@ const CUSTOMER_LIST = [
         },
         business: {
             organization: "Joint-stock companies",
-            main_line: "bread",
             email: "fmctavish0@chicagotribune.com",
             address: "87249 American Terrace",
             tax_identification_number: "91237234751902347",
@@ -193,7 +193,8 @@ const CUSTOMER_LIST = [
         phone_number: "634-523-9995",
         address: "6 Fisk Lane",
         city: "Guangming",
-        type: "Overlapping",
+        main_line: "bread",
+        type: "overlapping",
         recent_purchase: "27/09/2020",
         liabilities: {
             short_term: 12000000,
@@ -202,7 +203,6 @@ const CUSTOMER_LIST = [
         },
         business: {
             organization: "Joint-stock companies",
-            main_line: "bread",
             email: "fmctavish0@chicagotribune.com",
             address: "87249 American Terrace",
             tax_identification_number: "91237234751902347",
@@ -222,158 +222,6 @@ const CUSTOMER_LIST = [
         note: {
             common: "Remember to do common note",
             other: "Remember to do other note",
-        },
-    },
-    {
-        uuid: "KUPDDKN2AJD",
-        full_name: "Sharron Abramin",
-        email: "sabramin5@amazonaws.com",
-        phone_number: "884-150-7357",
-        address: "5 John Wall Parkway",
-        city: "Luocheng",
-        type: "Overlapping",
-        recent_purchase: "17/09/2020",
-        liabilities: {
-            short_term: 12000000,
-            long_term: 50000000,
-            other: 0,
-        },
-        business: {
-            organization: "Joint-stock companies",
-            main_line: "bread",
-            email: "fmctavish0@chicagotribune.com",
-            address: "87249 American Terrace",
-            tax_identification_number: "91237234751902347",
-        },
-        bank_accounts: [
-            {
-                number: "123456789",
-                name: "FAR MCTAVISH",
-                bank: "ACB",
-            },
-            {
-                number: "987654321",
-                name: "FAR MCTAVISH",
-                bank: "TECHCOMBANK",
-            },
-        ],
-        note: {
-            common: "Remember to do common note",
-            other: "Remember to do other note",
-        },
-    },
-    {
-        uuid: "JYIKP8O8VF",
-        full_name: "Orelee Stanwix",
-        email: "ostanwix6@va.gov",
-        phone_number: "584-101-3839",
-        address: "492 Park Meadow Pass",
-        city: "Palaió Fáliro",
-        type: "Cash",
-        recent_purchase: "08/02/2020",
-        liabilities: {
-            short_term: 12000000,
-            long_term: 50000000,
-            other: 0,
-        },
-        business: {
-            organization: "Joint-stock companies",
-            main_line: "bread",
-            email: "fmctavish0@chicagotribune.com",
-            address: "87249 American Terrace",
-            tax_identification_number: "91237234751902347",
-        },
-        bank_accounts: [
-            {
-                number: "123456789",
-                name: "FAR MCTAVISH",
-                bank: "ACB",
-            },
-            {
-                number: "987654321",
-                name: "FAR MCTAVISH",
-                bank: "TECHCOMBANK",
-            },
-        ],
-        note: {
-            common: "Remember to do common note JYIKP8O8VF",
-            other: "Remember to do other note JYIKP8O8VF",
-        },
-    },
-    {
-        uuid: "EFOF7BVR",
-        full_name: "Yankee Wither",
-        email: "ywither7@istockphoto.com",
-        phone_number: "652-788-6953",
-        address: "653 Pine View Alley",
-        city: "Angkahgede",
-        type: "One time payment",
-        recent_purchase: "28/04/2019",
-        liabilities: {
-            short_term: 12000000,
-            long_term: 50000000,
-            other: 0,
-        },
-        business: {
-            organization: "Joint-stock companies",
-            main_line: "bread",
-            email: "fmctavish0@chicagotribune.com",
-            address: "87249 American Terrace",
-            tax_identification_number: "91237234751902347",
-        },
-        bank_accounts: [
-            {
-                number: "123456789",
-                name: "FAR MCTAVISH",
-                bank: "ACB",
-            },
-            {
-                number: "987654321",
-                name: "FAR MCTAVISH",
-                bank: "TECHCOMBANK",
-            },
-        ],
-        note: {
-            common: "Remember to do common note EFOF7BVR",
-            other: "Remember to do other note EFOF7BVR",
-        },
-    },
-    {
-        uuid: "U05WNKM8MDK",
-        full_name: "Alexis Wilshire",
-        email: "awilshire8@dion.ne.jp",
-        phone_number: "289-906-4467",
-        address: "1 North Center",
-        city: "Évlalo",
-        type: "Direct purchase",
-        recent_purchase: "24/10/2020",
-        liabilities: {
-            short_term: 12000000,
-            long_term: 50000000,
-            other: 0,
-        },
-        business: {
-            organization: "Joint-stock companies",
-            main_line: "bread",
-            email: "fmctavish0@chicagotribune.com",
-            address: "87249 American Terrace",
-            tax_identification_number: "91237234751902347",
-        },
-        bank_accounts: [
-            {
-                number: "123456789",
-                name: "FAR MCTAVISH",
-                bank: "ACB",
-            },
-            {
-                number: "987654321",
-                name: "FAR MCTAVISH",
-                bank: "TECHCOMBANK",
-            },
-        ],
-        note: {
-            common: "Remember to do common note U05WNKM8MDK",
-            other: "Remember to do other note U05WNKM8MDK",
         },
     },
 ];

@@ -2,7 +2,7 @@
     <div class="flex items-center justify-between">
         <div class="sm:flex items-center sm:space-x-3">
             <app-h1 class="font-bold text-gray-900" v-text="customer.full_name" />
-            <app-badge class="bg-yellow-100 text-yellow-800" v-text="customer.recent_purchase" />
+            <app-customer-type-badge :customer-type="customer.type" />
         </div>
         <app-action-button v-text="'Create new order'" />
     </div>
