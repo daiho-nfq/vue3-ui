@@ -5,7 +5,6 @@
                 <template #left-content>
                     <customer-profile-basic-info />
                     <customer-tab-container />
-                    <app-action-button class="ml-auto block" v-text="'Save'" />
                 </template>
                 <template #right-content> right </template>
             </layout-two-columns>
