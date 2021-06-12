@@ -39,7 +39,7 @@ const CUSTOMER_LIST = [
             other: 0,
         },
         business: {
-            organization: "Joint-stock companies",
+            company: "Joint-stock companies",
             email: "fmctavish0@chicagotribune.com",
             address: "87249 American Terrace",
             tax_identification_number: "91237234751902347",
@@ -87,7 +87,7 @@ const CUSTOMER_LIST = [
             other: 0,
         },
         business: {
-            organization: "Joint-stock companies",
+            company: "Joint-stock companies",
             email: "fmctavish0@chicagotribune.com",
             address: "87249 American Terrace",
             tax_identification_number: "91237234751902347",
@@ -125,7 +125,7 @@ const CUSTOMER_LIST = [
             other: 0,
         },
         business: {
-            organization: "Joint-stock companies",
+            company: "Joint-stock companies",
             email: "fmctavish0@chicagotribune.com",
             address: "87249 American Terrace",
             tax_identification_number: "91237234751902347",
@@ -163,7 +163,7 @@ const CUSTOMER_LIST = [
             other: 0,
         },
         business: {
-            organization: "Joint-stock companies",
+            company: "Joint-stock companies",
             email: "fmctavish0@chicagotribune.com",
             address: "87249 American Terrace",
             tax_identification_number: "91237234751902347",

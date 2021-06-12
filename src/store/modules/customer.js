@@ -1,4 +1,9 @@
-import { getter_customer, getter_customer_liabilities, getter_customer_bank_accounts } from "@/store/getters";
+import {
+    getter_customer,
+    getter_customer_liabilities,
+    getter_customer_bank_accounts,
+    getter_customer_business,
+} from "@/store/getters";
 import { mutation_setCustomerData } from "@/store/mutations";
 import { action_fetCustomerData } from "@/store/actions";
 import { CUSTOMER_LIST } from "@/constants";
@@ -12,6 +17,7 @@ const getters = {
     [getter_customer]: (state) => state.customer,
     [getter_customer_liabilities]: (state) => getValueByPath(state.customer, ["liabilities"], null),
     [getter_customer_bank_accounts]: (state) => getValueByPath(state.customer, ["bank_accounts"], null),
+    [getter_customer_business]: (state) => getValueByPath(state.customer, ["business"], null),
 };
 
 const mutations = {
