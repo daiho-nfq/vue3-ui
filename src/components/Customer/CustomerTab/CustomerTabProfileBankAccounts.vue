@@ -1,6 +1,6 @@
 <template>
     <div v-if="bankAccounts" class="space-y-4">
-        <app-h1 class="col-span-6" v-text="'Bank Accounts'" />
+        <app-h1 class="border-l-4 border-red-500 pl-2 font-medium" v-text="'Bank Accounts'" />
         <ul class="grid grid-cols-1 gap-6 xl:grid-cols-3">
             <customer-tab-profile-bank-accounts-item :bank-accounts="bankAccounts" />
         </ul>
