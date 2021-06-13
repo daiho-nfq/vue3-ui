@@ -14,11 +14,12 @@
 
 <script>
 import { mapActions } from "vuex";
-import { action_fetCustomerData } from "@/store/actions";
+import { action_fetchCustomerData, action_fetchOrderListByCustomer } from "@/store/actions";
 import LayoutMain from "@/layouts/LayoutMain.vue";
 import LayoutTwoColumns from "@/layouts/LayoutTwoColumns.vue";
 import CustomerProfileBasicInfo from "@/components/Customer/CustomerProfileBasicInfo.vue";
 import CustomerTabContainer from "@/components/Customer/CustomerTab/CustomerTabContainer.vue";
+import { ORDER_LIST } from "@/constants";
 
 export default {
     name: "CustomerProfile",
@@ -34,10 +35,13 @@ export default {
     methods: {
         $_getCustomerProfileData() {
             const customerCode = this.$route.params.code;
-            this.fetchCustomerData(customerCode);
+            this.fetchCustomerData(customerCode).then(() => this.fetchOrderListByCustomer(ORDER_LIST));
         },
         ...mapActions("customer", {
-            fetchCustomerData: action_fetCustomerData,
+            fetchCustomerData: action_fetchCustomerData,
+        }),
+        ...mapActions("orderList", {
+            fetchOrderListByCustomer: action_fetchOrderListByCustomer,
         }),
     },
 };

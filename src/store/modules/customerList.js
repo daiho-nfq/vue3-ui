@@ -1,6 +1,6 @@
 import { getter_customer_list } from "@/store/getters";
 import { mutation_setCustomerList } from "@/store/mutations";
-import { action_fetCustomerList } from "@/store/actions";
+import { action_fetchCustomerList } from "@/store/actions";
 import { CUSTOMER_LIST } from "@/constants";
 
 const state = {
@@ -18,7 +18,7 @@ const mutations = {
 };
 
 const actions = {
-    [action_fetCustomerList]({ commit }) {
+    [action_fetchCustomerList]({ commit }) {
         const customerList = CUSTOMER_LIST;
         commit(mutation_setCustomerList, customerList);
     },

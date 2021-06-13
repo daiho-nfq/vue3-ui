@@ -1,5 +1,8 @@
-//customer list
-export const action_fetCustomerList = "fetCustomerList";
+//CUSTOMER LIST
+export const action_fetchCustomerList = "fetchCustomerList";
 
-//customer
-export const action_fetCustomerData = "fetCustomerData";
+//CUSTOMER
+export const action_fetchCustomerData = "fetchCustomerData";
+
+//ORDER
+export const action_fetchOrderListByCustomer = "fetchOrderListByCustomer";

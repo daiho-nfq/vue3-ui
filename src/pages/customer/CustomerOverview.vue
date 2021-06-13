@@ -11,7 +11,7 @@
 
 <script>
 import { mapActions } from "vuex";
-import { action_fetCustomerList } from "@/store/actions";
+import { action_fetchCustomerList } from "@/store/actions";
 import LayoutMain from "@/layouts/LayoutMain.vue";
 import LayoutOneColumn from "@/layouts/LayoutOneColumn.vue";
 import CustomerList from "@/components/Customer/CustomerList.vue";
@@ -29,7 +29,7 @@ export default {
     },
     methods: {
         ...mapActions("customerList", {
-            fetchCustomerList: action_fetCustomerList,
+            fetchCustomerList: action_fetchCustomerList,
         }),
     },
 };

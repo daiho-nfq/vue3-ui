@@ -5,7 +5,7 @@ import {
     getter_customer_business,
 } from "@/store/getters";
 import { mutation_setCustomerData } from "@/store/mutations";
-import { action_fetCustomerData } from "@/store/actions";
+import { action_fetchCustomerData } from "@/store/actions";
 import { CUSTOMER_LIST } from "@/constants";
 import { getValueByPath } from "@/helpers/utils";
 
@@ -27,7 +27,7 @@ const mutations = {
 };
 
 const actions = {
-    [action_fetCustomerData]({ commit }, payload) {
+    [action_fetchCustomerData]({ commit }, payload) {
         const customer = CUSTOMER_LIST.find((e) => e.uuid === payload);
         commit(mutation_setCustomerData, customer);
     },
