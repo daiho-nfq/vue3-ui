@@ -18,6 +18,8 @@ import AppTable from "./AppTable.vue";
 import AppTableHead from "./AppTableHead.vue";
 import AppBadge from "./AppBadge.vue";
 import AppCustomerTypeBadge from "./AppCustomerTypeBadge.vue";
+import AppLoading from "./AppLoading.vue";
+import AppReOrderButton from "./AppReOrderButton.vue";
 
 export default {
     components: {
@@ -41,5 +43,7 @@ export default {
         AppTableHead,
         AppBadge,
         AppCustomerTypeBadge,
+        AppLoading,
+        AppReOrderButton,
     },
 };

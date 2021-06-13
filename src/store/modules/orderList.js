@@ -19,8 +19,8 @@ const mutations = {
 
 const actions = {
     [action_fetchOrderListByCustomer]({ commit }, payload) {
-        const groupByOrderDate = groupDataByKey(payload, "created_at");
-        commit(mutation_setOrderListByCustomer, groupByOrderDate);
+        // const groupByOrderDate = groupDataByKey(payload, "created_at");
+        commit(mutation_setOrderListByCustomer, payload);
     },
 };
 
