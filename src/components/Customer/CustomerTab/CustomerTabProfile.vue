@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import CustomerTabProfileInfo from "./CustomerTabProfileInfo.vue";
-import CustomerTabProfileBusiness from "./CustomerTabProfileBusiness.vue";
-import CustomerTabProfileBankAccounts from "./CustomerTabProfileBankAccounts.vue";
+import CustomerTabProfileInfo from "@/components/Customer/CustomerTab/CustomerTabProfile/CustomerTabProfileInfo.vue";
+import CustomerTabProfileBusiness from "@/components/Customer/CustomerTab/CustomerTabProfile/CustomerTabProfileBusiness.vue";
+import CustomerTabProfileBankAccounts from "@/components/Customer/CustomerTab/CustomerTabProfile/CustomerTabProfileBankAccounts.vue";
 
 export default {
     components: { CustomerTabProfileInfo, CustomerTabProfileBusiness, CustomerTabProfileBankAccounts },
