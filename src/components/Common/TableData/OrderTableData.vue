@@ -16,9 +16,7 @@
             </app-p3>
         </td>
         <td class="p-3">
-            <app-p3>
-                {{ orderItem.status }}
-            </app-p3>
+            <app-order-status-badge :order-status="orderItem.status" />
         </td>
         <td class="p-3">
             <app-p3>
@@ -31,7 +29,7 @@
             </app-p3>
         </td>
         <td class="p-2 cursor-pointer" align="right">
-            <DotsVerticalIcon class="w-5 h-8" />
+            <app-re-order-button />
         </td>
     </tr>
 </template>
@@ -39,13 +37,9 @@
 <script>
 import { mapGetters } from "vuex";
 import { getter_orderListByCustomer } from "@/store/getters";
-import { DotsVerticalIcon } from "@heroicons/vue/outline";
 
 export default {
     name: "OrderTableData",
-    components: {
-        DotsVerticalIcon,
-    },
     computed: {
         ...mapGetters("orderList", {
             orderList: getter_orderListByCustomer,
