@@ -51,4 +51,6 @@ const ORDER_LIST = [
     },
 ];
 
-export { ORDER_LIST };
+const ORDER_LIST_HEADING = ["Date", "Export From", "Created By", "Total", "Status", "Delivered By"];
+
+export { ORDER_LIST, ORDER_LIST_HEADING };

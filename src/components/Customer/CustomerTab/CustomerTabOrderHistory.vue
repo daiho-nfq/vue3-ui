@@ -1,5 +1,7 @@
 <template>
-    <customer-tab-order-list />
+    <div class="space-y-4">
+        <customer-tab-order-list />
+    </div>
 </template>
 
 <script>
@@ -7,8 +9,5 @@ import CustomerTabOrderList from "@/components/Customer/CustomerTab/CustomerTabO
 export default {
     name: "CustomerTabOrderHistory",
     components: { CustomerTabOrderList },
-    setup() {
-        return {};
-    },
 };
 </script>

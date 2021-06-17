@@ -7,16 +7,17 @@
 </template>
 
 <script>
-import CustomerTableData from "@/components/Customer/CustomerTableData.vue";
+import CustomerTableData from "@/components/Common/TableData/CustomerTableData.vue";
 import { CUSTOMER_LIST_HEADING } from "@/constants";
 
-const customerListHeading = CUSTOMER_LIST_HEADING;
 export default {
     name: "CustomerList",
     components: {
         CustomerTableData,
     },
     setup() {
+        const customerListHeading = CUSTOMER_LIST_HEADING;
+
         return {
             customerListHeading,
         };
