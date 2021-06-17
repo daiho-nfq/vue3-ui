@@ -1,5 +1,5 @@
 <template>
-    <RefreshIcon class="h-6 w-6 cursor-pointer" aria-hidden="true" />
+    <RefreshIcon class="w-8 h-6 cursor-pointer text-green-500" aria-hidden="true" />
 </template>
 
 <script>
