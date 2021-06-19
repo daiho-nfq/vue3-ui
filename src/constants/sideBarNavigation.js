@@ -14,7 +14,11 @@ const SIDE_BAR_NAVIGATION = [
         href: { name: ROUTE_NAME.CUSTOMER_OVERVIEW },
         icon: UserGroupIcon,
     },
-    { name: "Product", href: "#", icon: CubeIcon },
+    {
+        name: "Product",
+        href: { name: ROUTE_NAME.PRODUCT_OVERVIEW },
+        icon: CubeIcon,
+    },
     { name: "Inventory", href: "#", icon: LibraryIcon },
 ];
 

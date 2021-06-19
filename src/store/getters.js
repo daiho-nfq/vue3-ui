@@ -9,3 +9,6 @@ export const getter_customer_business = "customer_business";
 
 //ORDER
 export const getter_orderListByCustomer = "orderListByCustomer";
+
+//PRODUCT LIST
+export const getter_getProductList = "getProductList";

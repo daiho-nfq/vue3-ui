@@ -1,4 +1,4 @@
-import { isEqual, isNaN, isEmpty, isDate, get, groupBy, keys } from "lodash";
+import { isEqual, isNaN, isEmpty, isDate, get, groupBy, keys, orderBy } from "lodash";
 
 const isTwoValueEqual = (value, other) => isEqual(value, other);
 
@@ -32,4 +32,6 @@ const groupDataByKey = (object, key) => groupBy(object, key);
 
 const getObjectKeys = (object) => keys(object);
 
-export { isTwoValueEqual, isValueEmpty, getValueByPath, groupDataByKey, getObjectKeys };
+const orderObjectByKey = (object, key) => orderBy(object, key);
+
+export { isTwoValueEqual, isValueEmpty, getValueByPath, groupDataByKey, getObjectKeys, orderObjectByKey };

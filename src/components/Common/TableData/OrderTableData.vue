@@ -1,7 +1,7 @@
 <template>
     <tr v-for="(orderItem, index) in orderList" :key="index">
         <td class="p-3">
-            <app-p3>
+            <app-p3 class="font-semibold">
                 {{ orderItem.created_at }}
             </app-p3>
         </td>

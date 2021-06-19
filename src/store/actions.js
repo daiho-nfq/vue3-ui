@@ -6,3 +6,6 @@ export const action_fetchCustomerData = "fetchCustomerData";
 
 //ORDER
 export const action_fetchOrderListByCustomer = "fetchOrderListByCustomer";
+
+//PRODUCT LIST
+export const action_fetchProductList = "fetchProductList";
