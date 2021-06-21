@@ -21,6 +21,7 @@ import AppCustomerTypeBadge from "./AppCustomerTypeBadge.vue";
 import AppLoading from "./AppLoading.vue";
 import AppReOrderButton from "./AppReOrderButton.vue";
 import AppOrderStatusBadge from "./AppOrderStatusBadge.vue";
+import AppPopup from "./AppPopup.vue";
 
 export default {
     components: {
@@ -47,5 +48,6 @@ export default {
         AppLoading,
         AppReOrderButton,
         AppOrderStatusBadge,
+        AppPopup,
     },
 };
