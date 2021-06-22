@@ -18,9 +18,9 @@ import { action_fetchProductList } from "@/store/actions";
 import LayoutMain from "@/layouts/LayoutMain.vue";
 import LayoutOneColumn from "@/layouts/LayoutOneColumn.vue";
 import LayoutTwoColumns from "@/layouts/LayoutTwoColumns.vue";
-
 import ProductListSectionHeading from "@/components/Product/ProductListSectionHeading.vue";
 import ProductList from "@/components/Product/ProductList.vue";
+
 export default {
     name: "ProductOverview",
     components: {
