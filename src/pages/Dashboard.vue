@@ -2,7 +2,7 @@
     <layout-main>
         <main class="flex-1 overflow-y-auto">
             <layout-two-columns>
-                <template #left-content> left </template>
+                <template #left-content> {{ $t("generic.me") }} </template>
                 <template #right-content> right </template>
             </layout-two-columns>
         </main>
