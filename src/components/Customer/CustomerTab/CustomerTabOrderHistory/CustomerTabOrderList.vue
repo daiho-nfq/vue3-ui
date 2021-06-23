@@ -1,7 +1,9 @@
 <template>
-    <app-table :heading-names="orderListHeading">
-        <order-table-data />
-    </app-table>
+    <div class="overflow-auto no-scrollbar border rounded-lg">
+        <app-table :heading-names="orderListHeading">
+            <order-table-data />
+        </app-table>
+    </div>
 </template>
 
 <script>
