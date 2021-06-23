@@ -11,22 +11,33 @@
         leave-from="opacity-100"
         leave-to="opacity-0"
     >
-        <div class="fixed inset-0 z-250 overflow-y-auto">
-            <div class="px-4 text-center">
-                <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" @click="close" />
-                <div
-                    class="h-full inline-block px-6 py-4 my-8 overflow-hidden transform bg-white shadow-xl rounded-2xl"
-                >
-                    <div>
-                        <slot name="header" />
-                        <slot name="content" />
-                        <slot name="footer" />
+        <div class="fixed inset-0 z-250 w-full flex items-center justify-center">
+            <div class="absolute w-full h-full left-0 top-0 right-0 bottom-0 bg-gray-500 opacity-50" @click="close" />
+            <div
+                class="
+                    w-full
+                    h-full
+                    bg-gray-250
+                    flex flex-col
+                    relative
+                    h-auto
+                    sm:max-h-90
+                    sm:border sm:border-gray-400
+                    sm:shadow
+                    border-0
+                    rounded-lg
+                "
+                :class="sizePopupClass"
+            >
+                <div class="flex-grow bg-white overflow-auto flex flex-col rounded-lg">
+                    <div class="flex-grow overflow-y-auto overflow-x-hidden no-scrollbar !p-0">
+                        <slot class="p-0 rounded-lg bg-white shadow w-auto" />
                     </div>
-                    <app-close-button
-                        @click="close"
-                        class="absolute text-black text-2xl top-0 right-0 mt-2 mr-2 cursor-pointer"
-                    />
                 </div>
+                <app-close-button
+                    @click="close"
+                    class="absolute text-black text-2xl top-0 right-0 mt-2 mr-2 cursor-pointer"
+                />
             </div>
         </div>
     </TransitionRoot>
@@ -34,14 +45,55 @@
 
 <script>
 import { TransitionRoot } from "@headlessui/vue";
+import scrollableBodyMixin from "@/mixins/scrollableBodyMixin";
 
 export default {
     name: "AppPopup",
+    mixins: [scrollableBodyMixin],
     components: { TransitionRoot },
+    props: {
+        size: {
+            type: String,
+            default: "S",
+            validator: function (value) {
+                return ["S", "M", "L", "XL"].indexOf(value.toUpperCase()) !== -1;
+            },
+        },
+    },
+    computed: {
+        sizePopupClass() {
+            return this.$style["container" + this.size.toUpperCase()];
+        },
+    },
     methods: {
         close() {
             this.$emit("close");
         },
     },
+    mounted() {
+        this.onOpeningPopup();
+    },
+    destroyed() {
+        this.onClosingPopup();
+    },
 };
 </script>
+<style scoped module>
+@screen sm {
+    .containerS {
+        max-width: 33%;
+    }
+
+    .containerM {
+        max-width: 50%;
+    }
+
+    .containerL {
+        max-width: 66%;
+    }
+
+    .containerXL {
+        max-width: 75%;
+    }
+}
+</style>

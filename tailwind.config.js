@@ -22,6 +22,10 @@ module.exports = {
             "1/2": "50%",
             "3/4": "75%",
         },
+        maxHeight: {
+            90: "90%",
+            96: "24rem",
+        },
         extend: {
             colors: {},
         },

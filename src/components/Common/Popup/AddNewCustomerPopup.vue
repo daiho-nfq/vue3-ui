@@ -1,14 +1,23 @@
 <template>
     <app-popup>
-        <template #header>
-            <app-h3>header</app-h3>
-        </template>
-        <template #content>
-            <app-h3>content</app-h3>
-        </template>
-        <template #footer>
-            <app-h3>footer</app-h3>
-        </template>
+        <div class="p-6 bg-red-300 rounded-t flex-center flex-col w-full">
+            <h3>customer</h3>
+        </div>
+
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nam.</div>
+        <app-h3>footer footer footer</app-h3>
     </app-popup>
 </template>
 

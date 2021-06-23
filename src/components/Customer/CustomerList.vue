@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-5 overflow-auto border border-gray-200 rounded-lg">
+    <div class="mt-5 overflow-auto no-scrollbar border border-gray-200 rounded-lg">
         <app-table :heading-names="customerListHeading">
             <customer-table-data />
         </app-table>
