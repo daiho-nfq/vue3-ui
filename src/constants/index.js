@@ -1,3 +1,4 @@
+import APP_ICON from "./appIcon";
 import { ROUTE_NAME } from "./routeConstant";
 import SIDE_BAR_NAVIGATION from "./sideBarNavigation";
 import USER_NAVIGATION from "./userNavigation";
@@ -6,8 +7,10 @@ import { ORDER_LIST, ORDER_LIST_HEADING } from "./orderList";
 import CUSTOMER_TYPE from "./customerType";
 import ORDER_STATUS from "./OrderItemType";
 import { PRODUCT_LIST, PRODUCT_LIST_HEADING } from "./productList";
+import { DEFAULT_LANGUAGE, LANGUAGES } from "./language";
 
 export {
+    APP_ICON,
     ROUTE_NAME,
     SIDE_BAR_NAVIGATION,
     USER_NAVIGATION,
@@ -20,4 +23,6 @@ export {
     ORDER_STATUS,
     PRODUCT_LIST,
     PRODUCT_LIST_HEADING,
+    DEFAULT_LANGUAGE,
+    LANGUAGES,
 };

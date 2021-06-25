@@ -1,7 +1,6 @@
 import { getter_orderListByCustomer } from "@/store/getters";
 import { mutation_setOrderListByCustomer } from "@/store/mutations";
 import { action_fetchOrderListByCustomer } from "@/store/actions";
-import { getValueByPath, groupDataByKey } from "@/helpers/utils";
 
 const state = {
     orderListByCustomer: null,
