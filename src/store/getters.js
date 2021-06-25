@@ -12,3 +12,6 @@ export const getter_orderListByCustomer = "orderListByCustomer";
 
 //PRODUCT LIST
 export const getter_getProductList = "getProductList";
+
+//LANGUAGE
+export const getter_getLanguage = "getLanguage";

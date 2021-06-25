@@ -1,5 +1,9 @@
 {
     "generic": {
         "me": "Tôi"
+    },
+    "language": {
+        "vi": "Tiếng Việt",
+        "en": "Tiếng Anh"
     }
 }
