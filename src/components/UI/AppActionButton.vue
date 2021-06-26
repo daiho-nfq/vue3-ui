@@ -1,6 +1,6 @@
 <template>
     <button
-        class="py-2 px-4 text-white bg-red-500 hover:bg-red-600 focus:outline-none rounded-md shadow-sm"
+        class="py-2 px-4 text-white font-semibold bg-red-500 hover:bg-red-600 focus:outline-none rounded-md shadow-sm"
         :disabled="disable"
     >
         <slot />

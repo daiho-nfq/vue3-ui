@@ -54,7 +54,7 @@ export default {
     props: {
         size: {
             type: String,
-            default: "S",
+            default: "M",
             validator: function (value) {
                 return ["S", "M", "L", "XL"].indexOf(value.toUpperCase()) !== -1;
             },
