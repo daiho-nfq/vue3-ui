@@ -13,5 +13,14 @@
         "order": "Order",
         "product": "Product",
         "warehouse": "Warehouse"
+    },
+    "language": {
+        "vi": "Tiếng Anh",
+        "en": "English"
+    },
+    "customer": {
+        "actions": {
+            "create_customer": "Create Customer"
+        }
     }
 }
