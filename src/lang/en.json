@@ -10,10 +10,6 @@
     "customer": {
         "actions": {
             "add_new_customer": "Create new customer"
-        },
-        "customer_list": {
-            "title": "Customer List"
-        },
-        "title": "Customer"
+        }
     }
 }
