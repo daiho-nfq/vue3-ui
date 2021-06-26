@@ -6,5 +6,8 @@
         "vi": "Tiếng Việt",
         "en": "Tiếng Anh"
     },
-    "author": "Đại Hồ"
+    "author": "Đại Hồ",
+    "customer.actions": {
+        "add_new_customer": "Create new customer"
+    }
 }
