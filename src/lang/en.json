@@ -1,15 +1,17 @@
 {
+    "app": {
+        "author": "Dai Ho",
+        "email": "tidi1***@gmail.com",
+        "created_at": "2021-05-06",
+        "location": "Ho Chi Minh City",
+        "app_name": "Bot Mi Vi Vi"
+    },
     "generic": {
-        "me": "I"
-    },
-    "language": {
-        "vi": "Vietnamese",
-        "en": "English"
-    },
-    "author": "DaiHo",
-    "customer": {
-        "actions": {
-            "add_new_customer": "Create new customer"
-        }
+        "customer": "Customer",
+        "customer_list": "Customer List",
+        "home": "Home",
+        "order": "Order",
+        "product": "Product",
+        "warehouse": "Warehouse"
     }
 }
