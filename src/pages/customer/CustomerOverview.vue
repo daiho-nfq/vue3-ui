@@ -2,18 +2,18 @@
     <layout-main>
         <main class="flex-1 overflow-y-auto">
             <layout-one-column>
-                <button class="bg-red-500" @click="openPopup">click</button>
                 <customer-list-section-heading />
                 <customer-list />
             </layout-one-column>
         </main>
     </layout-main>
-    <add-new-customer-popup @close="closePopup" v-if="isShowPopup" />
+    <add-new-customer-popup @close="hideAddNewCustomerPopup" v-if="isShowAddNewCustomerPopup" />
 </template>
 
 <script>
 import { mapActions } from "vuex";
 import { action_fetchCustomerList } from "@/store/actions";
+import addNewCustomerPopupMixin from "@/mixins/popup/addNewCustomerPopupMixin";
 import LayoutMain from "@/layouts/LayoutMain.vue";
 import LayoutOneColumn from "@/layouts/LayoutOneColumn.vue";
 import CustomerList from "@/components/Customer/CustomerList.vue";
@@ -29,21 +29,11 @@ export default {
         CustomerListSectionHeading,
         AddNewCustomerPopup,
     },
-    data() {
-        return {
-            isShowPopup: false,
-        };
-    },
+    mixins: [addNewCustomerPopupMixin],
     created() {
         this.fetchCustomerList();
     },
     methods: {
-        closePopup() {
-            this.isShowPopup = false;
-        },
-        openPopup() {
-            this.isShowPopup = true;
-        },
         ...mapActions("customerList", {
             fetchCustomerList: action_fetchCustomerList,
         }),
