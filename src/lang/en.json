@@ -7,7 +7,9 @@
         "en": "English"
     },
     "author": "DaiHo",
-    "customer.actions": {
-        "add_new_customer": "Create new customer"
+    "customer": {
+        "actions": {
+            "add_new_customer": "Create new customer"
+        }
     }
 }
