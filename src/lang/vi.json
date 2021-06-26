@@ -1,15 +1,17 @@
 {
+    "app": {
+        "author": "Đại Hồ",
+        "email": "tidi1***@gmail.com",
+        "created_at": "06/05/2021",
+        "location": "Tp Hồ Chính Minh",
+        "app_name": "Bột Mì Vi Vi"
+    },
     "generic": {
-        "me": "Tôi"
-    },
-    "language": {
-        "vi": "Tiếng Việt",
-        "en": "Tiếng Anh"
-    },
-    "author": "Đại Hồ",
-    "customer": {
-        "actions": {
-            "add_new_customer": "Tạo khách hàng mới"
-        }
+        "customer": "Khách Hàng",
+        "customer_list": "Danh sách KH",
+        "home": "Trang chủ",
+        "order": "Đơn Hàng",
+        "product": "Sản phẩm",
+        "warehouse": "Kho hàng"
     }
 }
