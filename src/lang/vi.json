@@ -10,10 +10,6 @@
     "customer": {
         "actions": {
             "add_new_customer": "Tạo khách hàng mới"
-        },
-        "customer_list": {
-            "title": "Danh sách KH"
-        },
-        "title": "Khách Hàng"
+        }
     }
 }
