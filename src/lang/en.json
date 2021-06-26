@@ -6,5 +6,8 @@
         "vi": "Vietnamese",
         "en": "English"
     },
-    "author": "DaiHo"
+    "author": "DaiHo",
+    "customer.actions": {
+        "add_new_customer": "Tạo khách hàng mới"
+    }
 }
