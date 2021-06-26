@@ -8,6 +8,6 @@
     },
     "author": "DaiHo",
     "customer.actions": {
-        "add_new_customer": "Tạo khách hàng mới"
+        "add_new_customer": "Create new customer"
     }
 }
