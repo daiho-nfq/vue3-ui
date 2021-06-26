@@ -13,5 +13,14 @@
         "order": "Đơn Hàng",
         "product": "Sản phẩm",
         "warehouse": "Kho hàng"
+    },
+    "language": {
+        "vi": "Tiếng Việt",
+        "en": "Vietnamese"
+    },
+    "customer": {
+        "actions": {
+            "create_customer": "Tạo khách hàng"
+        }
     }
 }
