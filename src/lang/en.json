@@ -13,7 +13,7 @@
         },
         "title": "Customer"
     },
-    "customer.customer_list": {
+    "customer customer_list": {
         "title": "Customer List"
     }
 }
