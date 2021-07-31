@@ -18,7 +18,7 @@ import LayoutMain from "@/layouts/LayoutMain.vue";
 import LayoutOneColumn from "@/layouts/LayoutOneColumn.vue";
 import CustomerList from "@/components/Customer/CustomerList.vue";
 import CustomerListSectionHeading from "@/components/Customer/CustomerListSectionHeading.vue";
-import AddNewCustomerPopup from "@/components/Common/Popup/AddNewCustomerPopup.vue";
+import AddNewCustomerPopup from "@/components/Common/Popup/Customer/AddNewCustomerPopup.vue";
 
 export default {
     name: "CustomerOverview",

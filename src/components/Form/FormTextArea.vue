@@ -10,7 +10,8 @@
             focus:border-gray-300
             block
             w-full
-            sm:text-sm
+            text-md
+            sm:text-xl
             border-gray-300
             rounded-md
             placeholder-gray-400

@@ -20,8 +20,7 @@
                     bg-gray-250
                     flex flex-col
                     relative
-                    h-auto
-                    sm:max-h-90
+                    md:h-auto
                     sm:border sm:border-gray-400
                     sm:shadow
                     border-0
@@ -34,10 +33,7 @@
                         <slot class="p-0 rounded-lg bg-white shadow w-auto" />
                     </div>
                 </div>
-                <app-close-button
-                    @click="close"
-                    class="absolute text-black text-2xl top-0 right-0 mt-2 mr-2 cursor-pointer"
-                />
+                <app-close-button @click="close" class="absolute text-2xl top-0 right-0 mt-2 mr-2 cursor-pointer" />
             </div>
         </div>
     </TransitionRoot>
@@ -79,7 +75,7 @@ export default {
 };
 </script>
 <style scoped module>
-@screen sm {
+@screen md {
     .containerS {
         max-width: 33%;
     }
