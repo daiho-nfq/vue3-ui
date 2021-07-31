@@ -1,6 +1,6 @@
 <template>
     <button>
-        <XIcon class="h-6 w-6" aria-hidden="true" />
+        <XIcon class="h-6 w-6 text-white" aria-hidden="true" />
     </button>
 </template>
 
