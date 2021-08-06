@@ -1,6 +1,8 @@
-import CustomerTabProfile from "@/components/Customer/CustomerTab/CustomerTabProfile.vue";
-import CustomerTabOrderHistory from "@/components/Customer/CustomerTab/CustomerTabOrderHistory.vue";
-import CustomerTabTransaction from "@/components/Customer/CustomerTab/CustomerTabTransaction.vue";
+import CustomerTabProfile from "@/components/Customer/CustomerTab/CustomerTabProfile/CustomerTabProfile.vue";
+import CustomerTabBusiness from "@/components/Customer/CustomerTab/CustomerTabBusiness/CustomerTabBusiness.vue";
+import CustomerTabBankAccounts from "@/components/Customer/CustomerTab/CustomerTabBankAccounts/CustomerTabBankAccounts.vue";
+import CustomerTabOrderHistory from "@/components/Customer/CustomerTab/CustomerTabOrderHistory/CustomerTabOrderHistory.vue";
+import CustomerTabTransaction from "@/components/Customer/CustomerTab/CustomerTabTransaction/CustomerTabTransaction.vue";
 
 const CUSTOMER_LIST_HEADING = ["Name", "Phone Number", "Address", "Type", "Current Date"];
 
@@ -9,6 +11,16 @@ const CUSTOMER_PROFILE_TABS = [
         key: "tab_profile",
         name: "Profile",
         component: CustomerTabProfile,
+    },
+    {
+        key: "tab_business",
+        name: "Business",
+        component: CustomerTabBusiness,
+    },
+    {
+        key: "tab_bank_accounts",
+        name: "Bank Accounts",
+        component: CustomerTabBankAccounts,
     },
     {
         key: "tab_order_history",

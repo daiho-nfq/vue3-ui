@@ -25,7 +25,7 @@ import { mapGetters } from "vuex";
 import { isValueEmpty, getValueByPath } from "@/helpers/utils";
 import { getter_customer_business } from "@/store/getters";
 export default {
-    name: "CustomerTabProfileBusiness",
+    name: "CustomerTabBusiness",
     data() {
         return {
             company: "",
