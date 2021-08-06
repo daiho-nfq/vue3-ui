@@ -6,7 +6,7 @@ const modelComputedMixin = {
                 return this.modelValue;
             },
             set(modelValue) {
-                this.$emit("input", modelValue);
+                this.$emit("update:modelValue", modelValue);
             },
         },
     },
