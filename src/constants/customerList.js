@@ -83,6 +83,22 @@ const CUSTOMER_LIST = [
         main_line: "bread",
         type: "one-time payment",
         recent_purchase: "01/03/2021",
+        liabilities: {
+            short_term: 0,
+            long_term: 0,
+            other: 0,
+        },
+        business: {
+            company: "",
+            email: "",
+            address: "",
+            tax_identification_number: "",
+        },
+        bank_accounts: [],
+        note: {
+            common: "",
+            other: "",
+        },
     },
     {
         uuid: "UDAYAB",
