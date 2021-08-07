@@ -1,4 +1,4 @@
-const formSubmitMixin = {
+const customerProfileMixin = {
     props: {
         formData: {
             type: Object,
@@ -23,4 +23,4 @@ const formSubmitMixin = {
     },
 };
 
-export default formSubmitMixin;
+export default customerProfileMixin;
