@@ -13,7 +13,7 @@
 import CustomerProfileForm from "@/components/Customer/CustomerForm/CustomerProfileForm.vue";
 
 export default {
-    name: "AddNewCustomerPopup",
+    name: "CustomerPopup",
     components: {
         CustomerProfileForm,
     },
@@ -29,7 +29,7 @@ export default {
                 other: "",
             },
         };
-        
+
         return { customer };
     },
 };
