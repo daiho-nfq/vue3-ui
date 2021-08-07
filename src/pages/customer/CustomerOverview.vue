@@ -7,13 +7,13 @@
             </layout-one-column>
         </main>
     </layout-main>
-    <add-new-customer-popup @close="hideAddNewCustomerPopup" v-if="isShowAddNewCustomerPopup" />
+    <add-new-customer-popup @close="hideCustomerPopup" v-if="isShowCustomerPopup" />
 </template>
 
 <script>
 import { mapActions } from "vuex";
 import { action_fetchCustomerList } from "@/store/actions";
-import addNewCustomerPopupMixin from "@/mixins/popup/addNewCustomerPopupMixin";
+import customerPopupMixin from "@/mixins/popup/customerPopupMixin";
 import LayoutMain from "@/layouts/LayoutMain.vue";
 import LayoutOneColumn from "@/layouts/LayoutOneColumn.vue";
 import CustomerList from "@/components/Customer/CustomerList.vue";
@@ -29,7 +29,7 @@ export default {
         CustomerListSectionHeading,
         AddNewCustomerPopup,
     },
-    mixins: [addNewCustomerPopupMixin],
+    mixins: [customerPopupMixin],
     created() {
         this.fetchCustomerList();
     },

@@ -29,7 +29,7 @@
             </app-p4>
         </td>
         <td class="p-3 space-x-2">
-            <PencilIcon class="w-8 h-6 text-red-500 cursor-pointer" />
+            <PencilIcon class="w-8 h-6 text-red-500 cursor-pointer" @click="editProduct(product)" />
         </td>
     </tr>
 </template>
@@ -50,6 +50,11 @@ export default {
         ...mapGetters("productList", {
             productList: getter_getProductList,
         }),
+    },
+    methods: {
+        editProduct(product) {
+            console.log(product.name);
+        },
     },
 };
 </script>

@@ -7,8 +7,8 @@ import {
 
 import {
     mutation_setCustomerData,
-    mutation_hideAddNewCustomerPopup,
-    mutation_showAddNewCustomerPopup,
+    mutation_hideCustomerPopup,
+    mutation_showCustomerPopup,
 } from "@/store/mutations";
 
 import { action_fetchCustomerData } from "@/store/actions";
@@ -18,7 +18,7 @@ import { getValueByPath } from "@/helpers/utils";
 
 const state = {
     customer: null,
-    isShowAddNewCustomerPopup: false,
+    isShowCustomerPopup: false,
 };
 
 const getters = {
@@ -32,11 +32,11 @@ const mutations = {
     [mutation_setCustomerData](state, customerData) {
         state.customer = customerData;
     },
-    [mutation_showAddNewCustomerPopup](state) {
-        state.isShowAddNewCustomerPopup = true;
+    [mutation_showCustomerPopup](state) {
+        state.isShowCustomerPopup = true;
     },
-    [mutation_hideAddNewCustomerPopup](state) {
-        state.isShowAddNewCustomerPopup = false;
+    [mutation_hideCustomerPopup](state) {
+        state.isShowCustomerPopup = false;
     },
 };
 

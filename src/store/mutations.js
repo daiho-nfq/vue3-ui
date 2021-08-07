@@ -14,5 +14,5 @@ export const mutation_setProductList = "setProductList";
 export const mutation_setLangue = "setLanguage";
 
 //POPUP
-export const mutation_hideAddNewCustomerPopup = "hideAddNewCustomerPopup";
-export const mutation_showAddNewCustomerPopup = "showAddNewCustomerPopup";
+export const mutation_hideCustomerPopup = "hideCustomerPopup";
+export const mutation_showCustomerPopup = "showCustomerPopup";
