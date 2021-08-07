@@ -9,11 +9,11 @@
 
 <script>
 import { isTwoValueEqual } from "@/helpers/utils";
-import customerProfileMixin from "@/mixins/customerProfileMixin";
+import formSubmitMixin from "@/mixins/formSubmitMixin";
 
 export default {
     name: "CustomerForm",
-    mixins: [customerProfileMixin],
+    mixins: [formSubmitMixin],
     props: {
         isDisableSubmit: {
             type: Boolean,
