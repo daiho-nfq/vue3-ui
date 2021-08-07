@@ -49,12 +49,12 @@ export default {
     data() {
         return {
             fullName: this.customer.full_name,
-            email: this.customer.email,
+            email: this.customer?.email,
             phoneNumber: this.customer.phone_number,
             address: this.customer.address,
             city: this.customer.city,
-            commonNote: this.customer.note.common,
-            otherNote: this.customer.note.other,
+            commonNote: this.customer.note?.common,
+            otherNote: this.customer.note?.other,
         };
     },
     computed: {
