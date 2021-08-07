@@ -11,8 +11,7 @@
 <script>
 import { mapGetters } from "vuex";
 import { getter_customer } from "@/store/getters";
-import { isValueEmpty, getValueByPath, isTwoValueEqual } from "@/helpers/utils";
-import { ROUTE_NAME } from "@/constants";
+import { isValueEmpty, getValueByPath } from "@/helpers/utils";
 import CustomerProfileForm from "@/components/Customer/CustomerForm/CustomerProfileForm.vue";
 
 export default {
@@ -30,7 +29,7 @@ export default {
     },
     methods: {
         $_mapCustomerProfile() {
-            if (isValueEmpty(this.customer) || isTwoValueEqual(this.$route.name, ROUTE_NAME.CUSTOMER_OVERVIEW)) {
+            if (isValueEmpty(this.customer)) {
                 return;
             }
 
