@@ -4,31 +4,33 @@
             <app-h2 class="uppercase !text-white font-bold" v-text="$t('customer.actions.create_customer')" />
         </div>
         <div class="gap-4 p-4">
-            <customer-profile-form />
+            <customer-profile-form :customer="customer" />
         </div>
     </app-popup>
 </template>
 
 <script>
 import CustomerProfileForm from "@/components/Customer/CustomerForm/CustomerProfileForm.vue";
-import customerProfileMixin from "@/mixins/customerProfileMixin";
 
 export default {
     name: "AddNewCustomerPopup",
-    mixins: [customerProfileMixin],
     components: {
         CustomerProfileForm,
     },
-    computed: {
-        getName() {
-            console.log(this.fullName);
-            return this.fullName;
-        },
-    },
-    methods: {
-        submitForm() {
-            console.log(this.getName);
-        },
+    data() {
+        const customer = {
+            fullName: "",
+            email: "",
+            phoneNumber: "",
+            address: "",
+            city: "",
+            note: {
+                common: "",
+                other: "",
+            },
+        };
+        
+        return { customer };
     },
 };
 </script>
