@@ -7,6 +7,9 @@ export const getter_customer_liabilities = "customer_liabilities";
 export const getter_customer_bank_accounts = "customer_bank_accounts";
 export const getter_customer_business = "customer_business";
 
+//PRODUCT
+export const getter_getProductDetail = "getProductDetail";
+
 //ORDER
 export const getter_orderListByCustomer = "orderListByCustomer";
 
