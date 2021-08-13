@@ -10,6 +10,9 @@ export const mutation_setOrderListByCustomer = "setOrderListByCustomer";
 //PRODUCT LIST
 export const mutation_setProductList = "setProductList";
 
+//PRODUCT
+export const mutation_setProductDetail = "setProductDetail";
+
 //LANGUAGE
 export const mutation_setLangue = "setLanguage";
 

@@ -3,10 +3,10 @@ import { mutation_showProductPopup, mutation_hideProductPopup } from "@/store/mu
 
 const productPopupMixin = {
     computed: {
-        ...mapState("productList", ["isShowProductPopup"]),
+        ...mapState("product", ["isShowProductPopup"]),
     },
     methods: {
-        ...mapMutations("productList", {
+        ...mapMutations("product", {
             showProductPopup: mutation_showProductPopup,
             hideProductPopup: mutation_hideProductPopup,
         }),
