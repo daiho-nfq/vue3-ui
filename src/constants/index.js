@@ -6,7 +6,7 @@ import { CUSTOMER_LIST, CUSTOMER_LIST_HEADING, CUSTOMER_PROFILE_TABS } from "./c
 import { ORDER_LIST, ORDER_LIST_HEADING } from "./orderList";
 import CUSTOMER_TYPE from "./customerType";
 import ORDER_STATUS from "./OrderItemType";
-import { PRODUCT_LIST, PRODUCT_LIST_HEADING } from "./productList";
+import { PRODUCT_LIST, PRODUCT_LIST_HEADING, PRODUCT_WEIGHT, PRODUCT_USE, PRODUCT_TYPE } from "./productList";
 import { DEFAULT_LANGUAGE, LANGUAGES } from "./language";
 
 export {
@@ -23,6 +23,9 @@ export {
     ORDER_STATUS,
     PRODUCT_LIST,
     PRODUCT_LIST_HEADING,
+    PRODUCT_WEIGHT,
+    PRODUCT_USE,
+    PRODUCT_TYPE,
     DEFAULT_LANGUAGE,
     LANGUAGES,
 };
