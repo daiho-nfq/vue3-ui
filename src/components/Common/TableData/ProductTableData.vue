@@ -15,7 +15,7 @@
         </td>
         <td class="p-3">
             <app-p4>
-                {{ product.use }}
+                {{ product.type }}
             </app-p4>
         </td>
         <td class="p-3">

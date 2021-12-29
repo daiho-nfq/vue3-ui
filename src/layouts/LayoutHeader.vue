@@ -18,30 +18,11 @@
 </template>
 
 <script>
-import {
-    Dialog,
-    DialogOverlay,
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuItems,
-    TransitionChild,
-    TransitionRoot,
-} from "@headlessui/vue";
-
 import UserMenuSetting from "@/components/Common/UserMenu/UserMenuSetting.vue";
 
 export default {
     name: "LayoutHeader",
     components: {
-        Dialog,
-        DialogOverlay,
-        Menu,
-        MenuButton,
-        MenuItem,
-        MenuItems,
-        TransitionChild,
-        TransitionRoot,
         UserMenuSetting,
     },
 };
